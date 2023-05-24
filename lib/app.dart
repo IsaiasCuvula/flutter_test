@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_test/pages/register_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -6,10 +7,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Test',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
-      home: const Text(' Home Page'),
+      home: const RegisterPage(),
     );
   }
 }
